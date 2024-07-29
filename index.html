@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Art Showcase</title>
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Including Axios  -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1 class="header__title">Animal Art Showcase</h1>
+        <div class="header__text">
+            <p>Welcome to Animal Art Showcase, your gateway to exploring the mesmerizing world of animal-themed art! Utilizing the vast collection of the Art Institute of Chicago, this website brings you a curated selection of artworks featuring animals. Whether you're drawn to majestic lions, playful dolphins, or exotic birds, simply click on the buttons labeled with different animal names to discover stunning pieces of art that celebrate these creatures. Immerse yourself in the beauty and diversity of animal art from various periods and styles, all in one place. </p>
+            <span>Explore, admire, and let the artistry inspire you!</span>
+        </div>
+    </header>
+    <nav class="navBar">
+        <ul class="animalOptions">
+            <li class="animalOptions__Tag"><a id="horse" href="#animal__Results">Horses</a></li><li class="animalOptions__Tag"><a id="cow" href="#animal__Results">Cows</a></li>
+            <li class="animalOptions__Tag"><a id="elephant" href="#animal__Results">Elephants</a></li>
+            <li class="animalOptions__Tag"><a id="cat" href="#animal__Results">Cats</a></li>
+            <li class="animalOptions__Tag"><a id="owl" href="#animal__Results">Owls</a></li>
+            <li class="animalOptions__Tag"><a id="dog" href="#animal__Results">Dogs</a></li>
+            <li class="animalOptions__Tag"><a id="peacock" href="#animal__Results">Peacocks</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="artwork__Container" style="display: none;">
+            <section id="animal__Results" class="">
+            </section>
+            <article id="artwork" style="display: none;">
+                <div id="artwork_Title_Div">
+                    <h2 id="artwork_Title-h2"></h2>
+                    <span id="artwork_Title-artist"></span>
+                    <span id="artwork_Title-creation"></span>
+                </div>
+                <figure>
+                    <img id="artwork_Img">
+                </figure>
+                <table id="artwork_Info">
+                    <caption>Artwork Information</caption>
+                    <tr>
+                        <th scope="row">Title</th>
+                        <td id="artwork_Info_Title"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Date</th>
+                        <td id="artwork_Info_Date"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Place</th>
+                        <td id="artwork_Info_Place"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Medium</th>
+                        <td id="artwork_Info_Medium"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Inscriptions</th>
+                        <td id="artwork_Info_Inscriptions"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Credit Line</th>
+                        <td id="artwork_Info_CreditLine"></td>
+                    </tr>
+                </table>
+                <table id="artist_Info">
+                    <caption>Artist Information</caption>
+                    <tr>
+                        <th scope="row">Name</th>
+                        <td id="artist_Info_Name"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Date of birth</th>
+                        <td id="artist_Info_Birth"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Date of death</th>
+                        <td id="artist_Info_Death"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Description</th>
+                        <td id="artist_Info_Description"></td>
+                    </tr>
+                </table>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <section class="footer__apiInfo">
+            <p>Data and images are sourced from the Art Institute of Chicago API.</p>
+            <p>Please visit their main website here: <a href="https://www.artic.edu" target="_blank" rel="noopener noreferrer">https://www.artic.edu</a></p>
+            <p>Search queries show only artwork which is in the public domain and are limited to 60 requests per user per minute.</p>
+        </section>
+        <section class="footer__contactInfo">
+            <p>Copyright © by Lina Martinez- all rights reserved</p>
+            <p>You can view the source <a href="https://github.com/linakl19" target="_blank" rel="noopener noreferrer">here</a> and contact me at linamar.code@gmail.com</p>
+        </section>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
