@@ -2,15 +2,6 @@ Animal Art Showcase
 
 Welcome to the Animal Art Showcase! This website allows you to explore a curated selection of animal-themed artworks from the Art Institute of Chicago. Whether you love horses, elephants, or peacocks, you can discover stunning pieces of art featuring your favorite animals.
 
-Table of Contents
-
-Features
-Installation
-Usage
-Code Overview
-API
-Contributing
-
 Features
 
 Browse animal-themed artworks.
