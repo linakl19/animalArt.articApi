@@ -57,6 +57,7 @@ header{
 .header__title{
     color: var(--blue-gray-color);
     width: 30%;
+    text-align: center;
 }
 .header__text{
     width: 70%;
